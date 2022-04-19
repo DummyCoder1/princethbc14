@@ -74,7 +74,7 @@ while True:
     if groundx< -330:
         groundx=0
         
-    if bee.bee.colliderect(pipe1.topPipe) or bee.bee.colliderect(pipe1.bottomPipe) : #Modify the condition so that bee also collides with pipe2
+    if bee.bee.colliderect(pipe1.topPipe) or bee.bee.colliderect(pipe1.bottomPipe) :or bee.bee.colliderect(pipe2.topPipe)or :bee.bee.colliderect(pipe2.bottomPipe)#Modify the condition so that bee also collides with pipe2
         state="over"
      
     pipe1.move()
